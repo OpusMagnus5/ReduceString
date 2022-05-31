@@ -55,9 +55,8 @@ public class Main {
         if (str.equals(str2)){
             return str2;
         }else {
-            str = reduceString(str2);
+            return reduceString(str2);
         }
-        return str;
     }
 
     /*    public static void reduceString(String str){
