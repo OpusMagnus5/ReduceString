@@ -59,4 +59,18 @@ public class Main {
         }
         return str;
     }
+
+    /*    public static void reduceString(String str){
+        String str2 = str.replaceAll("ab", "c");
+        str2 = str2.replaceAll("ba", "c");
+        str2 = str2.replaceAll("ac", "b");
+        str2 = str2.replaceAll("ca", "b");
+        str2 = str2.replaceAll("bc", "a");
+        str2 = str2.replaceAll("cb", "a");
+        if (!str.equals(str2)){
+            reduceString(str2);
+        }else {
+            System.out.println(str);
+        }
+    }*/
 }
