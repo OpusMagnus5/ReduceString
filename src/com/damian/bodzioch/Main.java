@@ -45,45 +45,16 @@ public class Main {
         }
     }*/
 
-/*    public static void reduceString(String str){
+    public static String reduceString(String str){
         String str2 = str.replaceAll("ab", "c");
         str2 = str2.replaceAll("ba", "c");
         str2 = str2.replaceAll("ac", "b");
         str2 = str2.replaceAll("ca", "b");
         str2 = str2.replaceAll("bc", "a");
         str2 = str2.replaceAll("cb", "a");
-        if (!str.equals(str2)){
-            reduceString(str2);
-        }else {
-            System.out.println(str);
-        }
-    }*/
-
-    public static String reduceString(String str){
-        String str2 = str.replaceFirst("ab", "c");
-        if (!str.equals(str2)){
-            str = reduceString(str2);
-        }
-        str2 = str2.replaceFirst("ba", "c");
-        if (!str.equals(str2)){
-            str = reduceString(str2);
-        }
-        str2 = str2.replaceFirst("ac", "b");
-        if (!str.equals(str2)){
-            str = reduceString(str2);
-        }
-        str2 = str2.replaceFirst("ca", "b");
-        if (!str.equals(str2)){
-            str = reduceString(str2);
-        }
-        str2 = str2.replaceFirst("bc", "a");
-        if (!str.equals(str2)){
-            str = reduceString(str2);
-        }
-        str2 = str2.replaceFirst("cb", "a");
         if (str.equals(str2)){
-            return str;
-        } else {
+            return str2;
+        }else {
             str = reduceString(str2);
         }
         return str;
